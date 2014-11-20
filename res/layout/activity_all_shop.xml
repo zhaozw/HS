@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 这是四个与商家有关的界面:购物，教育咨询，其他，餐饮 -->
+
+
+    <!-- Top navigation -->
+
+    <include layout="@layout/merge_head" />
+
+    <!-- List -->
+
+    <include layout="@layout/merge_list_view"/>
+
+</LinearLayout>

@@ -1,0 +1,197 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- logo和背景图片 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp"
+            android:src="@drawable/logo" />
+        
+         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/top_wenzi" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/home_yuan" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <!-- 两个大圆 -->
+
+        <LinearLayout
+            android:id="@+id/twoYuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp" >
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/estateManagement"
+                    android:layout_width="@dimen/activity_home_big_yuan_size"
+                    android:layout_height="@dimen/activity_home_big_yuan_size"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:src="@drawable/selector_big_circle" />
+
+                <TextView
+                    style="@style/textStyleBigCircle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/estateManagement" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/lifeMust"
+                    android:layout_width="@dimen/activity_home_big_yuan_size"
+                    android:layout_height="@dimen/activity_home_big_yuan_size"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:src="@drawable/tab2" />
+
+                <TextView
+                    style="@style/textStyleBigCircle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lifeMust" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- 四个小圆 -->
+
+        <LinearLayout
+            android:id="@+id/fourYuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/twoYuan"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/other"
+                    android:layout_width="@dimen/activity_home_samll_yuan_size"
+                    android:layout_height="@dimen/activity_home_samll_yuan_size"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:src="@drawable/tab3" />
+
+                <TextView
+                    style="@style/textStyleSmallCircle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/catering"
+                    android:layout_width="@dimen/activity_home_samll_yuan_size"
+                    android:layout_height="@dimen/activity_home_samll_yuan_size"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:src="@drawable/tab4" />
+
+                <TextView
+                    style="@style/textStyleSmallCircle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/catering" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/shopping"
+                    android:layout_width="@dimen/activity_home_samll_yuan_size"
+                    android:layout_height="@dimen/activity_home_samll_yuan_size"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:src="@drawable/tab5" />
+
+                <TextView
+                    style="@style/textStyleSmallCircle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shopping" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/educationInformation"
+                    android:layout_width="@dimen/activity_home_samll_yuan_size"
+                    android:layout_height="@dimen/activity_home_samll_yuan_size"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:src="@drawable/tab6" />
+
+                <TextView
+                    style="@style/textStyleSmallCircle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/educationInformation" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="32dp"
+            android:text="nihao"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>

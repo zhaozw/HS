@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不用多种语言 -->
+    <string name="estate">YueKwongChuen</string>
+    <string name="appCode">998F1293A83AEB467207E6BF7C330DDF</string>
+
+    <string name="app_name">健康邨</string>
+    <string name="action_settings">Settings</string>
+    
+    <string-array name="pref_fontSize_entries">
+        <item>大號字體</item>
+        <item>中號字體</item>
+        <item>小號字體</item>
+    </string-array>
+    <!-- no change -->
+    <string-array name="pref_fontSize_values">
+        <item>bigFontSize</item>
+        <item>middleFontSize</item>
+        <item>smallFontSize</item>
+    </string-array>
+    <string-array name="pref_switchLanguage_entries">
+        <item>繁體中文</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="pref_switchLanguage_values">
+        <item>zh_HK</item>
+        <item>en</item>
+    </string-array>
+
+    <!-- 提示信息 -->
+    <string name="visitServerError">無網絡，請檢查網絡&#8230;</string>
+    <string name="dataEmpty">沒有數據</string>
+    <string name="cannotEmptyUserName">用戶名不能為空</string>
+    <string name="cannotEmptyPwd">密碼不能為空</string>
+    <string name="userNameOrPwdError">用戶名或密碼錯誤</string>
+    <string name="please_login">請先登錄&#8230;</string>
+    <string name="loadImageFail">加載圖片失敗&#8230;</string>
+    <string name="haveAdded">添加過了</string>
+    <string name="addSuccess">收藏成功</string>
+    <string name="deleteSuccess">取消收藏成功</string>
+    <string name="getAddress">獲取地址中&#8230;</string>
+    <string name="connectServer">連接服務器&#8230;</string>
+    <string name="downloadFile">下載文件&#8230;</string>
+    <string name="downloadSuccess">下載成功，請查看&#8230;</string>
+    <string name="everDownloaded">下載好了，請查看&#8230;</string>
+    <string name="downloadFail">下載文件失敗！</string>
+    <string name="pleaseWait">請等待&#8230;</string>
+
+    <!-- Menu String -->
+    <string name="userName">用戶名</string>
+    <string name="login">登入</string>
+    <string name="inbox">收件箱</string>
+    <string name="contactUs">聯繫我們</string>
+    <string name="favourites">我的最愛</string>
+    <string name="setting">設置</string>
+    <string name="reportProblems">報告問題</string>
+    <string name="logout">登出</string>
+
+    <!-- Login UI -->
+    <string name="hint_login">用戶名</string>
+    <string name="hint_pwd">密碼</string>
+    <string name="text_remember_pwd">記住密碼</string>
+    <string name="text_auto_login">自動登錄</string>
+    <string name="text_login">登錄</string>
+
+    <!-- Home UI String -->
+    <string name="estateManagement">物業服務</string>
+    <string name="lifeMust">生活必備</string>
+    <string name="other">其他</string>
+    <string name="catering">餐飲</string>
+    <string name="shopping">購物</string>
+    <string name="educationInformation">教育資訊</string>
+
+    <!-- Estate Service -->
+    <string name="estateNotice">物業通告</string>
+    <string name="viewPDFFile">查閱文件</string>
+    
+    <!-- Life Must Detail -->
+    <string name="share">Share</string>
+    <string name="stamp">Stamp</string>
+    <string name="order">Order</string>
+    <string name="map">Map</string>
+    <string name="coupon">Coupon</string>
+    <string name="add">Add</string>
+    <string name="added">Added</string>
+    <string name="call">Call</string>
+
+    <!-- 临时 -->
+    <string name="pref_sync">pref_sync</string>
+    <string name="pref_sync_summ">pref_sync_summ</string>
+    <string name="pref_syncConnectionType">pref_syncConnectionType</string>
+    <string name="pref_syncConnectionTypes_default">default</string>
+    <string name="pref_sms_storage_title">pref_sms_storage_title</string>
+    <string name="voicemail_settings">voicemail_settings</string>
+
+    <!-- Setting String -->
+    <!-- ********系统******** -->
+    <string name="system">系統</string>
+    <!-- font size -->
+    <string name="fontSize">字體大小</string>
+    <string name="fontSize_dialogTitle">選擇字體大小</string>
+    <string name="fontSize_defaultValue">middleFontSize</string>
+    <string name="fontSize_bigFont">大號字體</string>
+    <string name="fontSize_middleFont">中號字體</string>
+    <string name="fontSize_smallFont">小號字體</string>
+    <!-- message hint -->
+    <string name="messageHint">資訊提示</string>
+    <string name="messageHintSummary">向你發送最新消息</string>
+    <!-- Switch Language -->
+    <string name="switchLanguage">切換語言</string>
+    <string name="switchLanguage_dialogTitle">選擇語言</string>
+    <string name="switchLanguage_comChi">繁體中文</string>
+    <string name="switchLanguage_eng">English</string>
+    <string name="switchLanguage_comChi_value">zh_HK</string>
+    <string name="switchLanguage_eng_value">en</string>
+    <!-- Clean cache -->
+    <string name="cleanCache">清除緩存</string>
+    <string name="cleanCache_summary">0kb</string>
+    <string name="cleanCacheMessage">確定清除緩存</string>
+    <string name="cleanCacheNegative">確定</string>
+    <string name="cleanCachePositive">取消</string>
+    <!-- ********关于******** -->
+    <string name="about">關於</string>
+    <string name="versionNum">版本號</string>
+    <string name="disclaimer">免責聲明</string>
+    <string name="aboutCIC">關於“雲端互動社區”</string>
+    <string name="feedback">意見反饋</string>
+    <string name="gradeComment">評分與評論</string>
+    
+    <!-- Report Problem -->
+    <string name="reportNotice">僅限於報告非緊急事件，如需及时协助，请致电管理处</string>
+    <string name="reportContactManagement">联系管理处</string>
+    <string name="reportAddress">所在地址：</string>
+    <string name="reportName">姓名：</string> 
+    <string name="reportEmail">邮件：</string>
+    <string name="reportPhone">电话：</string>
+    <string name="reportProblemType">问题类型：</string>
+    <string name="reportProblemTypeIndoor">室内</string>
+    <string name="reportProblemTypeOutdoor">室外</string>
+    <string name="reportProblemDetail">详细情况（最多可输入500个中文字） </string>
+    <string name="reportCommit">提交</string>
+    
+    <!-- Long String -->
+    <string name="disclaimerDetail">摯華有限公司及卡薈有限公司對於本應用程式及其所載資料的準確性、可用性、完整性或效用，
+        概不作出明確或暗示的保證、聲明或陳述；在法律許可的範圍內，對於提供或使用本應用程式及其所載資料而可能直接或間接引致任何損失、損害或傷害，
+        也不負任何法律承擔或責任。
+        \n\n“雲端互動社區”需透過蘋果公司提供之推送業務，卡薈有限公司並不保證閣下能成功或準時接收到相關資訊。
+        \n\n本應用顯示之公共交通工具車資均為八達通成人單程車資。
+        \n\n商戶應自覺遵守商品說明條例及其他相關之香港法律，誠實守信進行經營。如發現商戶有進行不良銷售行為，已經確認，卡薈有限公司有權無條件屏蔽該商戶資訊，所付款項不予退還，並保留追究責任權利。 
+        \n\n商戶自身基於其提供之貨品或服務享有與其相關之條款，閣下使用時應遵守。確保貨品、服務或資訊符合閣下需要是閣下自身責任。
+        \n\n摯華有限公司及卡薈有限公司會確保所有透過“雲端互動社區”遞交的個人資料均按照《個人資料（私隱）條例》的有關條文處理。</string>
+
+    <string name="aboutCICDetail">卡薈有限公司開發之“雲端互動社區”（CIC）是以智能手機和網頁為介面，利用雲端技術之數字平台，
+        為住戶、物業管理公司和鄰近商戶提供便捷服務。\n\n憑藉該系統，住戶可以輕鬆獲得各類社區資訊，包括交通、教育、餐飲、購物等；
+        物業管理公司可以提升管理效率，直接向住戶智能手機發送屋苑通告並接受會所設施線上預定；商戶可以將各種商業資訊線上傳遞，
+        不再需要印刷派遞，環保、便捷、節約成本。
+        \n\nCIC系統曾獲一系列地區、國際獎項，包括”2014亞洲智能手機應用程式大賽“及“2014香港資訊及通訊科技獎”之“最佳流動應用程式”等。</string>
+
+</resources>

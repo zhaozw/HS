@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 字體大小設置、資訊推送接收、切換語言（繁體、英文兩種語言）、清除緩存 -->
+    <PreferenceCategory
+        android:key="pref_key_category_system"
+        android:title="@string/system" >
+
+        <!-- 字体大小 -->
+        <ListPreference
+            android:defaultValue="@string/fontSize_defaultValue"
+            android:dialogTitle="@string/fontSize_dialogTitle"
+            android:entries="@array/pref_fontSize_entries"
+            android:entryValues="@array/pref_fontSize_values"
+            android:key="pref_fontSize"
+            android:summary="@string/fontSize_middleFont"
+            android:title="@string/fontSize" />
+        <!-- 推送消息 -->
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_messageHint"
+            android:summary="@string/messageHintSummary"
+            android:title="@string/messageHint" />
+        <!-- 切換語言 -->
+        <ListPreference
+            android:dialogTitle="@string/switchLanguage_dialogTitle"
+            android:entries="@array/pref_switchLanguage_entries"
+            android:entryValues="@array/pref_switchLanguage_values"
+            android:key="pref_switchLanguage"
+            android:title="@string/switchLanguage" />
+        <!-- Clean Cache -->
+        <Preference
+            android:key="pref_cleanCache"
+            android:title="@string/cleanCache" >
+            <intent
+                android:action="android.settings.APPLICATION_DETAILS_SETTINGS"
+                android:data="package:cardapp.com.android.housingsociety" />
+        </Preference>
+    </PreferenceCategory>
+    <!-- 版本號、免責聲明、雲端互動社區、意見反饋（發送郵件至已設定的郵箱）、評分與評論 -->
+    <PreferenceCategory
+        android:key="pref_key_category_about"
+        android:title="@string/about" >
+        <Preference
+            android:key="pref_versionNum"
+            android:summary="1.0"
+            android:title="@string/versionNum" >
+        </Preference>
+
+        <!-- 免責聲明 -->
+        <Preference
+            android:key="pref_disclaimer"
+            android:title="@string/disclaimer" >
+        </Preference>
+        <!-- 雲端互動社區 -->
+        <Preference 
+            android:key="pref_aboutCIC"
+            android:title="@string/aboutCIC" >
+        </Preference>
+        <!-- 意見反饋 -->
+        <Preference 
+            android:key="pref_feedback"
+            android:title="@string/feedback" >
+        </Preference>
+        <!-- 評分與評論 -->
+        <Preference 
+            android:key="pref_gradeComment"
+            android:title="@string/gradeComment" >
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp" >
+
+    <!-- back button -->
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:layout_marginRight="18dp"
+        android:clickable="true"
+        android:onClick="finishActivity"
+        android:padding="10dp"
+        android:src="@drawable/back" />
+
+    <!-- current UI logo -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:contentDescription="@string/app_name"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/divide"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
+
+    <!-- Title -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divide"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="0dp"
+        android:layout_toLeftOf="@+id/logo"
+        android:layout_toRightOf="@+id/back"
+        android:gravity="center"
+        android:maxLines="3"
+        android:textColor="#111"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- divide -->
+
+    <View
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_alignParentBottom="true"
+        android:background="#111" >
+    </View>
+
+</RelativeLayout>

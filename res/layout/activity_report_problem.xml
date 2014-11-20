@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 头部导航 -->
+
+    <include layout="@layout/merge_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reportNotice"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/reportContactBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="32dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/selector_report_problem_button"
+                android:text="@string/reportContactManagement"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <!-- 所在地址 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/reportProblemTextView"
+                        android:text="@string/reportAddress" />
+
+                    <EditText
+                        android:id="@+id/reportAddress"
+                        style="@style/reportProblemEditText" />
+                </LinearLayout>
+
+                <!-- 姓名 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/reportProblemTextView"
+                        android:text="@string/reportName" />
+
+                    <EditText
+                        android:id="@+id/reportName"
+                        style="@style/reportProblemEditText" />
+                </LinearLayout>
+
+                <!-- 邮件 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/reportProblemTextView"
+                        android:text="@string/reportEmail" />
+
+                    <EditText
+                        android:id="@+id/reportEmail"
+                        style="@style/reportProblemEditText" />
+                </LinearLayout>
+
+                <!-- 电话 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/reportProblemTextView"
+                        android:text="@string/reportPhone" />
+
+                    <EditText
+                        android:id="@+id/reportPhone"
+                        style="@style/reportProblemEditText" />
+                </LinearLayout>
+
+                <!-- 问题类型 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/reportProblemTextView"
+                        android:text="@string/reportProblemType" />
+
+                    <RadioGroup
+                        android:id="@+id/reportProblemType"
+                        android:layout_width="235dp"
+                        android:layout_height="wrap_content"
+                        android:checkedButton="@+id/reportProblemTypeIndoor"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/reportProblemTypeIndoor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/selector_report_problem_radiobutton" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:text="@string/reportProblemTypeIndoor"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/reportProblemTypeOutdoor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@null"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/selector_report_problem_radiobutton" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/reportProblemTypeOutdoor"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 详细情况 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/reportProblemDetail"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/reportProblemDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/baoshi_bigtext"
+                android:inputType="text"
+                android:padding="4dp" />
+
+            <Button
+                android:id="@+id/reportCommit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/selector_report_problem_button"
+                android:text="@string/reportCommit"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

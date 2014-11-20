@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Healthy Village</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Login UI -->
+    <string name="hint_login">User Name</string>
+    <string name="hint_pwd">Password</string>
+    <string name="text_remember_pwd">Remember Password</string>
+    <string name="text_auto_login">Auto Login</string>
+    <string name="text_login">Login</string>
+
+    <!-- Home UI -->
+    <string name="estateManagement">Serivce</string>
+    <string name="lifeMust">Life Need</string>
+    <string name="other">Other</string>
+    <string name="catering">Catering</string>
+    <string name="shopping">Shopping</string>
+    <string name="educationInformation">Edu. Info.</string>
+    
+    <!-- Menu String -->
+    <string name="userName">User Name</string>
+    <string name="login">Login</string>
+    <string name="inbox">Inbox</string>
+    <string name="contactUs">Contact Us</string>
+    <string name="favourites">Favourites</string>
+    <string name="setting">Settings</string>
+    <string name="reportProblems">Report Problems</string>
+    <string name="logout">Logout</string>
+    
+    <!-- Estate Service -->
+    <string name="estateNotice">Estate Service</string>
+    <string name="viewPDFFile">See File</string>
+
+    <!-- Setting String -->
+    <!-- ********系统******** -->
+    <string name="system">System</string>
+    <!-- font size -->
+    <string name="fontSize">Font Size</string>
+    <string name="fontSize_dialogTitle">Select Font Size</string>
+    <string name="fontSize_defaultValue">middleFontSize</string>
+    <string name="fontSize_bigFont">Big Font</string>
+    <string name="fontSize_middleFont">Middle Font</string>
+    <string name="fontSize_smallFont">Small Font</string>
+    <!-- message hint -->
+    <string name="messageHint">Remaind News Message</string>
+    <string name="messageHintSummary">Send New Message To You</string>
+    <!-- Switch Language -->
+    <string name="switchLanguage">Switch Language</string>
+    <string name="switchLanguage_summary">English</string>
+    <string name="switchLanguage_dialogTitle">Select A Language</string>
+    <!-- Clean cache -->
+    <string name="cleanCache">Clean Cache</string>
+    <string name="cleanCache_summary">0kb</string>
+    <string name="cleanCacheMessage">Will Clean All Cache</string>
+    <string name="cleanCacheNegative">Confirm</string>
+    <string name="cleanCachePositive">Cancel</string>
+    <!-- ********关于******** -->
+    <string name="about">About</string>
+    <string name="versionNum">Version Number</string>
+    <string name="disclaimer">Discalimer</string>
+    <string name="aboutCIC">About CIC</string>
+    <string name="feedback">Feedback</string>
+    <string name="gradeComment">Grade and Comment</string>
+
+</resources>

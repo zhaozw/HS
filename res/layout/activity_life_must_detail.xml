@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 头部导航 -->
+
+    <include layout="@layout/merge_head" />
+
+    <!-- Images Show -->
+    <!-- <include layout="@layout/merge_images" /> -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    	<include layout="@layout/merge_list_view"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#00FFFFFF" >
+
+            <Button
+                android:id="@+id/call"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/seletc_button_call" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_toLeftOf="@+id/call"
+                android:background="@drawable/seletc_button_add" />
+
+            <Button
+                android:id="@+id/map"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_toLeftOf="@+id/add"
+                android:background="@drawable/seletc_button_map" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Top navigation -->
+
+    <include layout="@layout/merge_head" />
+
+    <!-- Images Show -->
+
+    <include layout="@layout/merge_images" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc" />
+
+    <!-- function button -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <!-- 上一行 -->
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="@dimen/shop_detail_button_size"
+            android:layout_height="@dimen/shop_detail_button_size"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/seletc_button_share"
+            android:textSize="@dimen/shop_detail_button_text_size" />
+
+        <Button
+            android:id="@+id/stamp"
+            android:layout_width="@dimen/shop_detail_button_size"
+            android:layout_height="@dimen/shop_detail_button_size"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/share"
+            android:background="@drawable/seletc_button_stamp"
+            android:enabled="false"
+            android:textSize="@dimen/shop_detail_button_text_size" />
+
+        <Button
+            android:id="@+id/order"
+            android:layout_width="@dimen/shop_detail_button_size"
+            android:layout_height="@dimen/shop_detail_button_size"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/stamp"
+            android:background="@drawable/seletc_button_order"
+            android:enabled="false"
+            android:textSize="@dimen/shop_detail_button_text_size"
+            android:visibility="invisible" />
+
+        <!-- 下一行 -->
+
+        <Button
+            android:id="@+id/map"
+            android:layout_width="@dimen/shop_detail_button_size"
+            android:layout_height="@dimen/shop_detail_button_size"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/share"
+            android:background="@drawable/seletc_button_map"
+            android:enabled="false"
+            android:textSize="@dimen/shop_detail_button_text_size" />
+
+        <Button
+            android:id="@+id/coupon"
+            android:layout_width="@dimen/shop_detail_button_size"
+            android:layout_height="@dimen/shop_detail_button_size"
+            android:layout_below="@+id/share"
+            android:layout_toRightOf="@+id/map"
+            android:background="@drawable/seletc_button_coupon"
+            android:enabled="false"
+            android:textSize="@dimen/shop_detail_button_text_size" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="@dimen/shop_detail_button_size"
+            android:layout_height="@dimen/shop_detail_button_size"
+            android:layout_below="@+id/share"
+            android:layout_toRightOf="@+id/coupon"
+            android:background="@drawable/seletc_button_add"
+            android:textSize="@dimen/shop_detail_button_text_size" />
+
+        <!-- 最大的按钮 Call -->
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="@dimen/shop_detail_big_button_size"
+            android:layout_height="@dimen/shop_detail_big_button_size"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/seletc_button_call"
+            android:enabled="false"
+            android:textSize="@dimen/shop_detail_big_button_text_size" />
+    </RelativeLayout>
+
+    <!-- Description -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="-4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/shop_detail_description"
+        android:padding="16dp"
+        android:scrollbars="none" >
+
+        <TextView
+            android:id="@+id/describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</LinearLayout>
